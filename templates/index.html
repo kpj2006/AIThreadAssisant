@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Thread Poster</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 AI Thread Assistant</h1>
+        <p>Enter your thread below, with each tweet on a new line, starting with "1/", "2/", etc.</p>
+        
+        <textarea id="thread-input" rows="10" placeholder="1/ This is the first tweet...
+2/ This is the second tweet..."></textarea>
+        
+        <div class="button-group">
+            <button id="post-btn">Post Thread to X</button>
+            <button id="clear-btn">Clear</button>
+        </div>
+
+        <div id="spinner" class="spinner hidden"></div>
+        
+        <h2>Log Output</h2>
+        <pre id="log-output">Awaiting input...</pre>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
